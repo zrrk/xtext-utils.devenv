@@ -39,6 +39,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
+				<!-- TYCHO -->
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-compiler-plugin</artifactId>
@@ -61,15 +62,20 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- Only execute plain JUnit tests -->
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-surefire-plugin</artifactId>
 					<version>${tycho-version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-repository-plugin</artifactId>
+					<version>${tycho-version}</version>
 					<configuration>
-						<skip>true</skip>
+						<includeAllDependencies>false</includeAllDependencies>
 					</configuration>
 				</plugin>
+				<!-- APACHE MAVEN PLUGINS -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
@@ -88,6 +94,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.9</version>
 				</plugin>
+				<!-- OTHER PLUGINS -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
