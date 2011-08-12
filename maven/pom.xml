@@ -11,7 +11,7 @@
 	<artifactId>parent</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Xtext Utils - Parent POM</name>
+	<name>eclipse Labs xtext-utils</name>
 
 	<properties>
 		<tycho-version>0.12.0</tycho-version>
@@ -217,4 +217,15 @@
 		</license>
 	</licenses>
 
+	<url>http://code.google.com/a/eclipselabs.org/p/xtext-utils/</url>
+	<description>A collection of useful utilities and samples for Xtext based projects.</description>
+	<inceptionYear>2011</inceptionYear>
+	<issueManagement>
+		<system>GoogleCode Issue Tracker</system>
+		<url>http://code.google.com/a/eclipselabs.org/p/xtext-utils/issues/list</url>
+	</issueManagement>
+	<organization>
+		<name>eclipse Labs</name>
+		<url>http://code.google.com/a/eclipselabs.org/hosting/</url>
+	</organization>
 </project>
